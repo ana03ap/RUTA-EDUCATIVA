@@ -26,7 +26,7 @@
             }
           ]
 
-
+// nuevo data 
           data = [
             { category: "Math", value1: data[0].Math, value2: data[1].Math },
             { category: "Sociales", value1: data[0].Sociales, value2: data[1].Sociales },
