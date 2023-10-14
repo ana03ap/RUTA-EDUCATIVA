@@ -1,11 +1,9 @@
 // Datos
 
 
-        console.log("hola desde colegio")
-        console.log(data);
 
 
-        data = [
+        datos = [
             {
               cole_naturaleza: 'oficial',
               naturales: 47,
@@ -28,11 +26,11 @@
 
 // nuevo data 
           data = [
-            { category: "Math", value1: data[0].Math, value2: data[1].Math },
-            { category: "Sociales", value1: data[0].Sociales, value2: data[1].Sociales },
-            { category: "Lectura", value1: data[0].Lectura, value2: data[1].Lectura },
-            { category: "Ingles", value1: data[0].Ingles, value2: data[1].Ingles },
-            { category: "Naturales", value1: data[0].naturales, value2: data[1].naturales }
+            { category: "Math", value1: datos[0].Math, value2: datos[1].Math },
+            { category: "Sociales", value1: datos[0].Sociales, value2: datos[1].Sociales },
+            { category: "Lectura", value1: datos[0].Lectura, value2: datos[1].Lectura },
+            { category: "Ingles", value1: datos[0].Ingles, value2: datos[1].Ingles },
+            { category: "Naturales", value1: datos[0].naturales, value2: datos[1].naturales }
         ];
 
           console.log(data);
