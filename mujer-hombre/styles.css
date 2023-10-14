@@ -1,0 +1,54 @@
+#chart-genero{
+    padding-left: 15%;
+    padding-top: 20px;
+  }
+  
+  .barf{
+      fill: #b78edd;
+      
+    }
+
+.barm{
+        fill: #5aa888;  
+    }
+    
+  
+    #barras-genero{
+      padding-bottom: 3pc;
+    }
+  
+    #botones-chart{
+      display: flex;
+      width: 50%;
+      justify-content: center;
+      gap: 100px;
+    }
+    
+    #mujer, #hombre {
+      width: 150px;
+      height: 250px;
+
+    }
+    
+    #mujer:hover, #hombre:hover {
+      cursor: pointer;
+    }
+
+    #barrasGeneroMasBotones{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+    }
+
+    #btn-wm-m{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+      padding-right: 50%;
+    }
+  
+ 
+  
+  
+
+    
