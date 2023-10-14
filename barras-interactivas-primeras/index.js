@@ -109,13 +109,33 @@ let data = [
         .on("click", () => {
         //La función sort se utiliza para ordenar el arreglo de datos data. En el caso del botón "Orden Ascendente",
         // los datos se ordenan en orden ascendente en función del valor de la propiedad "promedioPuntajeGlobal
+        data = [
+          { Estrato: "sin estrato", promedioPuntajeGlobal: 230 },
+          { Estrato: "estrato 1", promedioPuntajeGlobal: 239 },
+          { Estrato: "estrato 2", promedioPuntajeGlobal: 252 },
+          { Estrato: "estrato 3", promedioPuntajeGlobal: 263 },
+          { Estrato: "estrato 4", promedioPuntajeGlobal: 276 },
+          { Estrato: "estrato 5", promedioPuntajeGlobal: 264 },
+          { Estrato: "estrato 6", promedioPuntajeGlobal: 277 },
+        ];
             const sortedData = data.slice().sort((a, b) => a.promedioPuntajeGlobal - b.promedioPuntajeGlobal);
             createBarChart(sortedData);
         });
 
       d3.select("#sort-descending")
         .on("click", () => {
+          data = [
+            { Estrato: "sin estrato", promedioPuntajeGlobal: 230 },
+            { Estrato: "estrato 1", promedioPuntajeGlobal: 239 },
+            { Estrato: "estrato 2", promedioPuntajeGlobal: 252 },
+            { Estrato: "estrato 3", promedioPuntajeGlobal: 263 },
+            { Estrato: "estrato 4", promedioPuntajeGlobal: 276 },
+            { Estrato: "estrato 5", promedioPuntajeGlobal: 264 },
+            { Estrato: "estrato 6", promedioPuntajeGlobal: 277 },
+          ];
             const sortedData = data.slice().sort((a, b) => b.promedioPuntajeGlobal - a.promedioPuntajeGlobal);
+            console.log('sorted')
+            console.log(sortedData)
             createBarChart(sortedData);
         });
 
