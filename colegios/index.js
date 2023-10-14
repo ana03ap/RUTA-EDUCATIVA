@@ -32,7 +32,7 @@
             { category: "Ingles", value1: datos[0].Ingles, value2: datos[1].Ingles },
             { category: "Naturales", value1: datos[0].naturales, value2: datos[1].naturales }
         ];
-
+        console.log("data desde colegios")
           console.log(data);
 
            svgWidth = 900;
@@ -101,7 +101,7 @@
 
 
         // Leyenda
-        var legend = svg.append("g")  // Crea un grupo SVG para la leyenda
+         legend = svg.append("g")  // Crea un grupo SVG para la leyenda
             .attr("font-family", 'Comfortaa, sans-serif') // Define la fuente de la leyenda
             .attr("font-size", 13) // Define el tamaño de fuente de la leyenda
             .attr("text-anchor", "end") // Alinea el texto de la leyenda al final (derecha)
