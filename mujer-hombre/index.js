@@ -40,7 +40,7 @@
     
         const svgWidth = 500;
         const svgHeight = 400;
-        const margin = { top: 20, right: 30, bottom: 60, left: 60 };
+        const margin = { top: 20, right: 40, bottom: 60, left: 140 };
         const width = svgWidth - margin.left - margin.right;
         const height = svgHeight - margin.top - margin.bottom;
     
@@ -87,12 +87,7 @@
             .attr('transform', `translate(0,${height})`)
             .call(d3.axisBottom(xScale));
     
-        svg.append('text')
-            .attr('transform', `translate(${width / 2},${-margin.top / 2})`)
-            .attr('text-anchor', 'middle')
-            .style('font-size', '10px')
-            .text('Materias');
-    
+ 
         svg.selectAll('.tick text')
             .style('font-family', 'Comfortaa, sans-serif');
     
