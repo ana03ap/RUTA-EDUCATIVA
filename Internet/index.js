@@ -1,4 +1,4 @@
-const datanueva = [
+let datanueva = [
     {
       depa: 'risaralda',
       'Con internetG': 260,
